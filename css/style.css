@@ -1,0 +1,146 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* ===== HEADER ===== */
+
+.header {
+  display: flex;
+  padding: 1rem;
+  max-height: 7rem;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header .logo img {
+  width: 100px;
+}
+
+.header .nav-center ul {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.header .nav-center ul li a {
+  color: #000;
+}
+
+.header .nav-end ul {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+}
+
+/* PRODUTO */
+.products {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.headset {
+  width: 20rem;
+  margin-right: 5rem;
+}
+.headset img {
+  width: 100%;
+}
+
+.product-information h1 {
+  color: #ff0000;
+  margin: 1.5rem 0;
+  margin-top: 1rem;
+}
+
+.product-information h2 {
+  margin-top: 1rem;
+  font-size: 1rem;
+}
+
+.ranking {
+  display: flex;
+  align-items: center;
+  margin-top: 1rem;
+  color: #ff0000;
+}
+.star {
+  width: 2rem;
+}
+
+.price {
+  margin-top: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.price button {
+  padding: 1rem;
+  width: 10rem;
+  background: #ff0000;
+  color: #fff;
+  outline: none;
+  border: none;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  margin-top: 10rem;
+  bottom: 0;
+  background: #f9f7d6;
+}
+/* RESPONSIVO */
+@media (max-width: 600px) {
+  .header .nav-center {
+    display: none;
+  }
+
+  .header {
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+  }
+
+  .header .logo img {
+    max-width: 4rem;
+  }
+
+  .products {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+  }
+
+  .headset {
+    margin-right: 0;
+    width: 15rem;
+  }
+  .headset img {
+    width: 100%;
+  }
+
+  .star {
+    width: 1.5rem;
+  }
+  .footer {
+    display: flex;
+    flex-direction: column;
+    margin-top: 5rem;
+    gap: 1rem;
+  }
+}
